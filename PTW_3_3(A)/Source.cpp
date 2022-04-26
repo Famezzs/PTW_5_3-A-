@@ -475,7 +475,7 @@ void Find(const string filename)
 		cin >> grade;
 		cout << endl;
 
-		isnotadequate = _speciality == 0 || _speciality > 4 || grade == 0 || grade > 5;
+		isnotadequate = _speciality < 0 || _speciality > 4 || grade == 0 || grade > 5;
 		if (isnotadequate)
 			cout << "Values provided are inadequate.\n\n";
 	} while (isnotadequate);
@@ -509,7 +509,7 @@ void IndexFind(const string filename)
 		cin >> grade;
 		cout << endl;
 
-		isnotadequate = _speciality == 0 || _speciality > 4 || grade == 0 || grade > 5;
+		isnotadequate = _speciality < 0 || _speciality > 4 || grade == 0 || grade > 5;
 		if (isnotadequate)
 			cout << "Values provided are inadequate.\n\n";
 	} while (isnotadequate);
